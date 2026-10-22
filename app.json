@@ -10,13 +10,8 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
+      "package": "com.berihu.smsstatement",
+      "permissions": ["android.permission.READ_SMS"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
