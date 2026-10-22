@@ -10,6 +10,7 @@ jobs:
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: 17 }
       - run: npm ci
+      - run: bash scripts/patch-sms-lib.sh
       - run: npx expo prebuild --platform android
       - run: cd android && ./gradlew assembleRelease
       - uses: actions/upload-artifact@v4
